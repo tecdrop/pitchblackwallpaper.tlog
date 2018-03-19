@@ -1,0 +1,46 @@
+body {
+    background: #FAFAFA;
+    background: #fafafa;
+    color: #444;
+    font-family: "Helvetica Neue",HelveticaNeue,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+
+.post {
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0 , 0, 0.08);
+    margin: 2rem;
+    padding: 1.25rem;
+}
+
+.quote {
+    margin: 0 0 2rem 0;
+}
+
+.quote__content {
+    font-family: Georgia, Times, serif;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.quote__content::before {
+    content: open-quote;
+    /* letter-spacing: -.25em; */
+}
+
+.quote__content::after {
+    content: close-quote;
+    /* margin-left: -.25em; */
+}
+
+.quote__source {
+    font-style: normal;
+}
+
+.quote__source::before {
+    content: "\2014\00A0";
+}
