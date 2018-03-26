@@ -1,0 +1,45 @@
+{% capture thecontent %} 
+
+    {{ post.content }}
+
+    <blockquote class="tlog-quote">
+
+        {% assign size = post.post_quote.size %}
+        {% if size < 100 %}
+        {% assign size_class = "short" %}
+        {% elsif size < 500 %}
+        {% assign size_class = "medium" %}
+        {% else % }
+        {% assign size_class = "long" %}
+        {% endif %}
+
+        {% if post.post_quote_full and page.id %}
+        {% assign quote = post.post_quote_full %}
+        {% else %}
+        {% assign quote = post.post_quote %}
+        {% endif %}
+        <div class="tlog-quote__content tlog-size--{{ size_class }}">{{ quote }}</div>
+
+        <cite class="tlog-quote__cite">
+            {{ post.post_cite }} 
+            {% if post.post_cite_location %}
+                / <span class="tlog-quote__cite-location"> {{ post.post_cite_location }}</span>
+            {% endif %}
+            {% if post.post_quote_lang %}
+                / <span class="tlog-quote__lang"> Translated from {{ post.post_quote_lang }}</span>
+            {% endif %}
+        </cite>
+    </blockquote>
+
+    {% if post.post_image %}
+        <div class="tlog-post__image">
+            <img src="{{ post.post_image }}" class="img-fluid tlog-post__image--{{ post.post_image_class }}" alt="" />
+        </div>
+    {% endif %}
+
+    <div>
+        {{ post.post_extra }}
+    </div>
+
+{% endcapture %} 
+{% include common/post.html %}
