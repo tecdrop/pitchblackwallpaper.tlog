@@ -4,14 +4,31 @@
 
  body {
     background: #FAFAFA;
-    color: #444;
-    font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
-    line-height: 1.4;
+    /* color: #444; */
+    /* font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+    line-height: 1.4; */
 }
   
   a, a:focus, a:hover {
-      color: #00a4f9;
+      /* color: #00a4f9; */
+      color: #a7a7a7;
+      text-decoration: none;
   }
+
+
+.tlog-post-header {
+    background: #f2f2f2;
+    border-bottom: none;
+}
+
+.tlog-post-header a {
+    color: inherit;
+}
+
+.tlog-post-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
 
 
 .tlog-post-content a {
@@ -65,9 +82,9 @@
 
 
 
-.tlog-post-content {
+/* .tlog-post-content {
     margin-bottom: 1rem;
-}
+} */
 
 /**
  * Post image
@@ -99,6 +116,7 @@
 
 
 .tlog-post-footer {
+    border-top: none;
     color: #686868;
     /* font-weight: 300; */
     font-size: .875rem;
@@ -149,9 +167,9 @@
     margin-bottom: 1.875rem;
 }
 
-.card-footer {
+/* .card-footer {
     border-top: 1px solid rgba(0,0 , 0, 0.08);
-}
+} */
 
 
 .tlog-size--short {
