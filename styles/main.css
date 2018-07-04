@@ -159,13 +159,19 @@
     }
 }
 
-.card {
-    border: 1px solid rgba(0,0 , 0, 0.08);
+
+.msnry-container {
+    margin: 0 auto;
 }
 
-.card-columns .card {
+.card {
+    border: 1px solid rgba(0,0 , 0, 0.08);
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 1.875rem;
+    width: 300px;
 }
+
 
 /* .card-footer {
     border-top: 1px solid rgba(0,0 , 0, 0.08);

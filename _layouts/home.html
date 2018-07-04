@@ -4,7 +4,8 @@ layout: default
 
 {{ content }}
 
-<div class="card-columns">
+<!-- <div class="msnry-container" data-masonry='{ "itemSelector": ".card", "fitWidth": true }'> -->
+<div class="msnry-container">
     {% for post in site.posts %}
         {% include post/post.html %}
     {% endfor %}
